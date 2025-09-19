@@ -4,7 +4,7 @@ import Icon from "./Icon"
 
 export default function Hero() {
     return (
-        <section id="hero" className="md:mt-[28px]">
+        <section id="hero" className="md:mt-[28px] lg:mt-[45px]">
             <div className="flex flex-row items-start justify-between">
               <div className="w-[316px] md:w-[498px] lg:w-[740px]" >
                <h2 className="font-[Archivo] font-semibold not-italic text-[58px] leading-[110%] text-[#303030]  md:font-semibold md:text-[48px] md:leading-[110%] lg:font-semibold lg:text-[72px] lg:leading-[110%] xl:font-semibold xl:text-[90px] xl:leading-[110%] xl:w-[1027px]">The yield-backed stablecoin protocol boosting <br className="md:hidden"/>
