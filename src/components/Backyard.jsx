@@ -55,7 +55,7 @@ function Slide({ card }) {
   preload="auto"
   playsInline
   poster={card.poster}
-  className="w-[179px] h-[179px] md:w-[245px] md:h-[245px] md:-mt-6 lg:-mt-[21px] lg:w-[179px] lg:h-[179px] object-cover rounded-lg justify-self-end "
+  className="w-[179px] h-[179px] md:w-[245px] md:h-[245px] md:-mt-3 lg:-mt-[21px] lg:w-[179px] lg:h-[179px] object-cover rounded-lg justify-self-end "
 />
       </div>
 

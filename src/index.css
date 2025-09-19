@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 @theme {
   --breakpoint-sm: 22.5rem;   /* 360px */
   --breakpoint-md: 48rem;     /* 768px */
@@ -10,45 +9,43 @@
   --font-sans: "Proxima Nova", ui-sans-serif, system-ui, -apple-system,
                "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
                "Liberation Sans", sans-serif;
+  --font-archivo: "Archivo", sans-serif;
+  --font-gilroy: "Gilroy", sans-serif;
 }
 
 @layer base {
   body {
-    @apply font-sans text-gray-900 bg-white; /* was bg-gray-50 */
+    @apply font-sans text-gray-900 bg-white;
+  }
+
+  a {
+    @apply text-inherit no-underline;
   }
 }
-
-
 
 @utility container {
   width: 100%;
   margin-inline: auto;
-  padding-inline: 1rem;  /* < sm & sm */
+  padding-inline: 1rem;
 
   @media (width >= theme(--breakpoint-md)) { padding-inline: 2rem; }
   @media (width >= theme(--breakpoint-lg)) { padding-inline: 3rem; }
   @media (width >= theme(--breakpoint-xl)) { padding-inline: 4rem; }
-
-  /* OPTIONAL max-widths — uncomment if you want a capped container */
-  /* @media (width >= theme(--breakpoint-lg)) { max-width: 80rem; }       */
-  /* @media (width >= theme(--breakpoint-xl)) { max-width: 85.625rem; }   */
 }
 
 @layer components {
   .nav-item {
-    @apply inline-flex items-center justify-center
-           px-3 py-2 rounded-full
-           font-medium text-[0.6875rem] leading-[0.875rem]
-           text-[#AEB0B1] whitespace-nowrap transition-colors;
+    @apply inline-flex items-center justify-center px-3 py-2 rounded-full
+           font-medium text-xs leading-tight text-[#AEB0B1] transition-colors;
   }
   .nav-item:hover { @apply bg-[#3B3B3B] text-[#FBFBFC]; }
   .nav-item:active { @apply bg-[#303030] text-[#FBFBFC]; }
-}
 
-.nav-item-mobile {
-  @apply block w-full rounded text-[#AEB0B1] text-sm font-medium transition-colors;
+  .nav-item-mobile {
+    @apply block w-full rounded text-[#AEB0B1] text-sm font-medium transition-colors;
+  }
+  .nav-item-mobile:active { @apply text-[#3B3B3B]; }
 }
-.nav-item-mobile:active { @apply text-[#3B3B3B] ; }
 
 @layer utilities {
   .bg-hero-pattern {
