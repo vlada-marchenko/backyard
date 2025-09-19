@@ -35,7 +35,7 @@ export function Header() {
         {/* Connect Button (desktop) */}
         <button
           onClick={() => setConnected(!connected)}
-          className={`hidden md:inline-flex relative w-[120px] h-[38px] rounded-full transition-colors
+          className={`hidden md:inline-flex lg:hidden relative w-[120px] h-[38px] rounded-full transition-colors
             ${
               connected
                 ? "bg-[#E8E9ED] text-[#303030] hover:text-[#ACACAD]"

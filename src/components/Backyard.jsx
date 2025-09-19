@@ -91,7 +91,8 @@ export default function Backyard() {
   return (
     <section id="about" className="mt-[67px] flex flex-col relative">
 
-      <h2 className="font-[Archivo] font-bold text-[28px] leading-[110%] text-[#303030] md:mb-[20px] lg:mb-0 lg:md-0 absolute z-50 pointer-events-none md:static md:z-auto">
+      <h2 className="absolute -top-4 z-60 pointer-events-none 
+               md:static md:mb-2 md:z-auto font-[Archivo] font-bold text-[28px] leading-[110%] text-[#303030]">
         What is Backyard?
       </h2>
 
